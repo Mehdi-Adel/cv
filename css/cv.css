@@ -1,0 +1,102 @@
+:root{
+    --main-color: #5D3FF5;
+    --secondary-color: #9C8AF7;
+    --important-text-color: #F5DF40;
+    --standard-text-color: white;
+}
+
+body {
+    background-color: var(--secondary-color);
+    color: var(--standard-text-color);
+    max-width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body > nav ul{
+    display: none;
+    list-style: none;
+    padding: 0;
+    background-color: purple;
+    margin: 0;
+}
+
+#presentation{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--main-color);
+}
+
+.cv-picture {
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.name, .title {
+    text-align: center;
+    color: var(--important-text-color);
+}
+
+#introduction {
+    max-width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #5439DB;
+    color: var(--standard-text-color);
+    padding: 5px;
+}
+
+/* Experiences */
+
+.experience-title {
+    background-color: #2D1E75;
+    text-align: center;
+}
+
+.experience {
+    border: 1px solid black;
+    border-radius: 5%;
+    box-shadow:2px 5px 5px black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Media queries */
+
+@media screen and (min-width: 576px){
+    .toggle-menu{
+        display: none;
+    }
+    
+    body > nav ul{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    body > nav ul li a {
+        padding-left:15px;
+        padding-right:15px;
+    }
+}
+
+@media screen and (min-width: 768px){    
+}
+
+@media screen and (min-width: 992px){
+}
+
+@media screen and (min-width: 1200px){
+
+}
+
+@media screen and (min-width: 1600px){
+
+}
