@@ -1,70 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mon CV</title>
-    <link rel="stylesheet" href="css/cv.css" media="screen" />
-    <link rel="stylesheet" href="./css/all.css" />
-    <script src="./js/functions.js"></script>
-  </head>
-  <body>
-    <!-- Introduction -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mon CV</title>
+        <link rel="stylesheet" href="css/cv.css" media="screen" />
+        <link rel="stylesheet" href="./css/all.css" />
+        <script src="./js/functions.js"></script>
+    </head>
+    <body>
+        <!-- Introduction -->
+        <header>
+            <nav id="menu">
+                <div class="toggle-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="menu-links">
+                    <li class="menu-item">
+                        <a class="menu-link" href="#presentation"
+                            >PRESENTATION</a
+                        >
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" href="#experience">EXPERIENCE</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" href="#formation">FORMATION</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" href="#skills"
+                            >COMPETENCES TECHNIQUES</a
+                        >
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" href="#contact">CONTACT</a>
+                    </li>
+                </ul>
+            </nav>
 
-    <nav>
-      <div class="toggle-menu">
-        <i class="fas fa-bars"></i>
-    </div>
-      <ul>
-      <li>Présentation</li>
-      <li>Expérience</li>
-      <li>Formation</li>
-      <li>Compétences techniques</li>
-      <li>Contact</li>
-    </ul></nav>
+            <div id="presentation">
+                <img
+                    src="./images/illusiveman.png"
+                    alt="avatar"
+                    class="cv-picture"
+                />
+                <div class="presentation">
+                    <h1 class="name">Mehdi ADEL</h1>
+                    <h2 class="title">Développeur web fullstack</h2>
+                </div>
+                <p id="introduction">
+                    Développeur web fullstack formé à l'école O'clock, passionné
+                    de programmation et de sciences exactes. Mes motivations :
+                    être digne de votre confiance, avoir un rôle très actif dans
+                    l'équipe et devenir un développeur confirmé.
+                </p>
+            </div>
+        </header>
+        <section id="experience">
+            <h2 class="section-title">Expériences professionnelles</h2>
+            <article class="experience">
+                <h3 class="experience-name">Médiateur Parentalité</h3>
+                <h4 class="experience-enterprise">Le Petit Ney | 2020</h4>
+                <p class="experience-description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Necessitatibus aliquam amet maiores vel corrupti eaque
+                    eligendi eius, vero delectus doloremque quod? Quod magnam
+                    iusto sequi?
+                </p>
+            </article>
+            <article class="experience">
+                <h3 class="experience-name">
+                    Lead-back Projet de fin de formation : AstronoMeet
+                </h3>
+                <h4 class="experience-enterprise">O'clock | Déc 2019</h4>
+                <p class="experience-description">
+                    Rédaction du cahier des charges et d'User Stories,
+                    élaboration de wireframes Développement d'un plugin
+                    d'évènements Inscription, authentification et newsletter
+                    Données météorologiques via API Participation au travail
+                    front-end Méthode Agile
+                </p>
+            </article>
+            <article class="experience">
+                <h3 class="experience-name">
+                    Assistant Pédagogique Maths/Sciences
+                </h3>
+                <h4 class="experience-enterprise">
+                    Lycée JVD | Sep 2013 - Août 2017
+                </h4>
+                <p class="experience-description">
+                    Soutien scolaire et pédagogique des matières scientifiques
+                    Remplacements ponctuels d'enseignants
+                </p>
+            </article>
+            <article class="experience">
+                <h3 class="experience-name">Acheteur</h3>
+                <h4 class="experience-enterprise">
+                    CMAE | Oct 2011 - Mars 2013
+                </h4>
+                <p class="experience-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatem ab, iste rem aliquid ipsum iusto obcaecati eum
+                    tempora dolorem impedit sed modi, mollitia, beatae ullam.
+                </p>
+            </article>
+        </section>
 
-    <div id="presentation">
-      <img src="./images/illusiveman.png" alt="avatar" class="cv-picture">
-      <div class="presentation">
-        <h1 class="name">Mehdi ADEL</h1>
-        <h2 class="title">Développeur web fullstack</h2>
-      </div>
-      <p id="introduction">Développeur web fullstack formé à l'école O'clock, passionné
-        de programmation et de sciences exactes.
-        Mes motivations : être digne de votre confiance, avoir un rôle
-        très actif dans l'équipe et devenir un développeur confirmé.</p>
-    </div>
-    <div id="experience">
-      <h2 class="experience-title">Expériences professionnelles</h2>
-      <div class="experience">
-        <h3 class="experience-name">Médiateur Parentalité</h3>
-        <h4 class="experience-enterprise">Le Petit Ney | 2020</h4>
-        <p class="experience-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus aliquam amet maiores vel corrupti eaque eligendi eius, vero delectus doloremque quod? Quod magnam iusto sequi?
-        </p>
-      </div>
-      <div class="experience">
-        <h3 class="experience-name">Lead-back Projet de fin de formation : AstronoMeet</h3>
-        <h4 class="experience-enterprise">O'clock | Déc 2019</h4>
-        <p class="experience-description">Rédaction du cahier des charges et d'User Stories,
-          élaboration de wireframes
-          Développement d'un plugin d'évènements
-          Inscription, authentification et newsletter
-          Données météorologiques via API
-          Participation au travail front-end
-          Méthode Agile</p>
-      </div>
-      <div class="experience">
-        <h3 class="experience-name"></h3>
-        <h4 class="experience-enterprise"></h4>
-        <p class="experience-description"></p>
-      </div>
-      <div class="experience">
-        <h3 class="experience-name"></h3>
-        <h4 class="experience-enterprise"></h4>
-        <p class="experience-description"></p>
-      </div>
-    </div>
-
-  </body>
+        <section id="formation">
+            <h2 class="section-title">Formation</h2>
+            <article class="formation">
+                <h3 class="formation-name">Développeur web & web mobile</h3>
+                <h4 class="school">O'clock | Juil 2019 - Déc 2019</h4>
+                <p class="formation-description">
+                    Labellisée Grande Ecole du Numérique 700 heures intensives
+                    HTML5/CSS3/PHP/Javascript/SQL/WordPress Un mois en autonomie
+                    pour la réalisation d'un projet de fin de formation dans une
+                    équipe de 3 développeurs
+                </p>
+            </article>
+            <article class="formation">
+                <h3 class="formation-name">
+                    Licence Sciences Chimiques et Biologiques
+                </h3>
+                <h4 class="school">UPEC | 2007 - 2010</h4>
+                <p class="formation-description"></p>
+            </article>
+        </section>
+    </body>
 </html>
